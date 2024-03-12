@@ -1,0 +1,322 @@
+/*
+    Author: Joseph Chong;
+    Theme: Food Order Website Admin;
+    Version: 1.0;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css");
+
+:root {
+  --main-color: #cbb09c;
+  --color-dark: #1d2231;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 1%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.tbl-full {
+  width: 100%;
+}
+
+.tbl-30 {
+  width: 30%;
+}
+
+.tbl-40 {
+  width: 40%;
+}
+
+table tr th {
+  border-bottom: 1px solid black;
+  padding: 1%;
+  text-align: left;
+}
+
+table tr td {
+  padding: 1.8%;
+  text-align: left;
+}
+
+.btn-primary {
+  background-color: #ffd000;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #fdba00;
+}
+
+.btn-secondary {
+  background-color: #1abc9c;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background-color: #24e65e;
+}
+
+.btn-danger {
+  background-color: #b12525;
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #ff0000;
+}
+
+.btn-login {
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  width: 20%;
+}
+
+.success {
+  color: #16a085;
+  font-weight: bold;
+}
+
+.error {
+  color: #e72914;
+  font-weight: bold;
+}
+
+/* css for menu */
+.menu {
+  border-bottom: 1px solid black;
+  background-color: #cbb09c;
+  height: fit-content;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+  padding: 3%;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(42, 42, 42);
+}
+
+.menu ul li a:hover {
+  color: #000000;
+}
+/* css for main content */
+.main-content {
+  background-color: rgb(228, 198, 153);
+  padding: 3% 0;
+  color: black;
+  height: 930px;
+}
+
+.col-4 {
+  width: 18%;
+  background-color: white;
+  margin: 1%;
+  padding: 2%;
+  float: left;
+}
+
+/* css for Footer */
+.footer {
+  background-color: #cbb09c;
+  color: white;
+  bottom: 0;
+}
+
+/*css for login */
+.login {
+  border: 1px solid #444444;
+  width: 40%;
+  margin: 10% auto;
+  padding: 3%;
+  background-image: url("../images/Barbershop.jpg");
+  color: white;
+}
+
+/* css for admin panel */
+.sidebar {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: var(--main-color);
+  color: #fff;
+  overflow-y: auto;
+  transition: width 500ms;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0rem 1rem;
+}
+
+.sidebar-menu {
+  padding: 1rem;
+}
+
+.sidebar li {
+  margin-bottom: 1.5rem;
+}
+.sidebar a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.sidebar a span:last-child {
+  padding-left: 0.6rem;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+  width: 60px;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child {
+  display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li {
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar-toggle:checked ~ .main-content {
+  margin-left: 60px;
+}
+
+#sidebar-toggle:checked ~ .main-content header {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+
+.main_content {
+  position: relative;
+  margin-left: 240px;
+  transition: margin-left 500ms;
+  background-color: rgb(241, 216, 192);
+  padding: 2% 0;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 60px;
+  background: #f1f5f9;
+  background-image: url(../images/Barbershop1.jpg);
+  min-height: 90vh;
+  padding: 1rem 3rem;
+}
+
+.dash-title {
+  color: #f9fafc;
+  margin-bottom: 1rem;
+}
+
+.dash-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.card-single {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 1.3rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-body span {
+  font-size: 1.5rem;
+  color: #777;
+  padding-right: 1.4rem;
+}
+
+.card-body h5 {
+  color: var(--text-grey);
+  font-size: 1rem;
+}
+
+.card-body h4 {
+  color: var(--color-dark);
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+}
+
+.card-footer {
+  padding: 0.2rem 1rem;
+  background: #f9fafc;
+}
+
+.card-footer a {
+  color: var(--main-color);
+}
+
+.pagination {
+  display: inline-block;
+}
+.pagination a {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+.pagination a.active {
+  background-color: rgb(255, 230, 0);
+}
+.pagination a:hover:not(.active) {
+  background-color: rgb(250, 227, 96);
+}

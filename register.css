@@ -1,0 +1,73 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 60%;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+label {
+  color: blue;
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+}
+#log {
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 26px;
+  display: 1px solid #ddd;
+  box-sizing: 16px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 90px;
+  background-color: #fff;
+}
+#login {
+  margin-left: 210px;
+  display: flex;
+}
+#create {
+  background-color: #d0ff14;
+  color: #4b5320;
+  cursor: pointer;
+  width: 15%;
+  padding: 12px 12px;
+  box-sizing: 16px;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 110px;
+}
+#back {
+  background-color: #422;
+  color: #4b5320;
+  cursor: pointer;
+  width: 15%;
+  padding: 12px 12px;
+  box-sizing: 16px;
+  font-size: 16px;
+  height: 10%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+img {
+  width: 100px;
+  height: 70px;
+}
+#logo {
+  background-color: white;
+  background-size: cover;
+}
