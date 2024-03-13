@@ -42,8 +42,8 @@ It has been carefully developed using PHP and MySQL to ensure efficiency and rel
 • Open your web browser and navigate to http://localhost/website_folder_name/, replacing "website_folder_name" with the name of the folder containing the website files.
 
 > [!NOTE]
-> http://localhost/website_folder_name/ for **Customer**
+> - http://localhost/website_folder_name/ for **Customer**
 > 
-> http://localhost/website_folder_name/admin for **Administrative**
+> - http://localhost/website_folder_name/admin for **Administrative**
 >
-> **_(http://localhost/website_folder_name - Port:80, http://localhost:8080/website_folder_name - Port:8080)_**
+> - **_(http://localhost/website_folder_name - Port:80, http://localhost:8080/website_folder_name - Port:8080)_**
