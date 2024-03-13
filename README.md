@@ -33,7 +33,7 @@ It has been carefully developed using PHP and MySQL to ensure efficiency and rel
 
 • Navigate to the Databases tab and fill in the "Database name" then click "Create" button.
 
-• Import the database schema from the database.sql file provided in the repository. 
+• Import the database schema from the barbershop.sql file provided in the repository. 
 
 #### 4. Download Project Source Code & Unzip:
 • Download and unzip the source code folder. Copy the folder and paste it into the "htdocs" directory located in the XAMPP installation directory (e.g., C:\xampp\htdocs\ on Windows).
